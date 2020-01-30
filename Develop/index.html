@@ -28,37 +28,14 @@
       <p class="lead">A simple calendar app for scheduling your 9-5 work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
-      <div class="input-group">
-        <input
-          type="text"
-          class="form-control"
-          aria-label="Text input with dropdown button"
-        />
-        <div class="input-group-append">
-          <button
-            class="btn btn-outline-secondary dropdown-toggle"
-            type="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Dropdown
-          </button>
-          <div class="dropdown-menu">
-            <a class="9AM" href="#">9AM</a>
-            <a class="10AM" href="#">10AM</a>
-            <a class="11AM" href="#">11AM</a>
-            <a class="12PM" href="#">12PM</a>
-            <a class="1PM" href="#">1PM</a>
-            <a class="2PM" href="#">2PM</a>
-            <a class="3PM" href="#">3PM</a>
-            <a class="4PM" href="#">4PM</a>
-          </div>
-          <button type="button" class="btn btn-success">Submit</button>
-        </div>
-      </div>
+    <div class="container" id="timeBlock">
       <!-- Timeblocks go here -->
+
+      <div class="row">
+        <div>10Am</div>
+        <input placeholder="test" />
+        <button>Lock</button>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
