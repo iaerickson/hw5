@@ -17,9 +17,15 @@ $(document).ready(function() {
     hourBlock.addClass("row");
     //
     var timeDiv = $("<div>");
-    //change text
     //add styles
-    //
+    if (i < 3) {
+      $(timeDiv).text(i + 9 + "AM");
+    } else if (i === 3) {
+      $(timeDiv).text(12 + "PM");
+    } else {
+      $(timeDiv).text(i - 3 + "PM");
+    }
+    timeDiv.addClass("hour");
     hourBlock.append(timeDiv);
     //
     var inputDiv = $("<div>");
@@ -32,7 +38,7 @@ $(document).ready(function() {
     //make it a submit button
     //add id to button
     //code function to listen for click event to lock
-    hourBlock.add(btnDiv);
+    hourBlock.append(btnDiv);
 
     var input = $("<input>");
 
