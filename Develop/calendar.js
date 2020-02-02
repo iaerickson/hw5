@@ -14,7 +14,7 @@ $(document).ready(function() {
   //timeSlots = (declare time)
   for (var i = 0; i < 8; i++) {
     var hourBlock = $("<div>");
-    hourBlock.addClass("row");
+
     //
     var timeDiv = $("<div>");
     //add styles
@@ -29,19 +29,23 @@ $(document).ready(function() {
     hourBlock.append(timeDiv);
     //
     var inputDiv = $("<div>");
+    var input = $("<input>");
+    inputDiv.append(input);
     //add input box
     //change input style
     //add color/logic (outside of forloop)
     hourBlock.append(inputDiv);
     //
     var btnDiv = $("<div>");
+    var saveBtn = $("<button/>");
+    saveBtn.text("Lock");
+    btnDiv.append(saveBtn);
     //make it a submit button
     //add id to button
     //code function to listen for click event to lock
     hourBlock.append(btnDiv);
 
-    var input = $("<input>");
-
+    hourBlock.addClass("row");
     $("#timeBlock").append(hourBlock);
   }
 
